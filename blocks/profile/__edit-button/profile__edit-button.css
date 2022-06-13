@@ -1,0 +1,22 @@
+.profile__edit-button {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #FFFFFF;
+    background: black;
+    background-image: url(../../../images/редактировать.svg);
+    margin-top: 37px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.profile__edit-button:hover {
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 500px) {
+    .profile__edit-button {
+        width: 18px;
+        height: 18px;
+        margin-top: 38px;
+    }
+}
