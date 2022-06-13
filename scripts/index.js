@@ -4,8 +4,8 @@ const popupCloseButton = document.querySelector(".popup__close-button");
 // Находим форму в DOM
 let formElement = document.querySelector(".popup__container");
 // Находим поля формы в DOM
-let nameInput = formElement.querySelector(".popup__text_name");
-let jobInput = formElement.querySelector(".popup__text_job");
+let nameInput = formElement.querySelector(".popup__text_type_name");
+let jobInput = formElement.querySelector(".popup__text_type_job");
 let newName = document.querySelector(".profile__title");
 let newJob = document.querySelector(".profile__subtitle");
 
@@ -40,7 +40,7 @@ function formSubmitHandler(evt) {
   evt.preventDefault(); // Эта строчка отменяет стандартную отправку формы.
   newName.textContent = nameInput.value;
   newJob.textContent = jobInput.value;
-  popup.classList.add("popup_hidden");
+  closePopup();
 }
 
 // Прикрепляем обработчик к форме:
